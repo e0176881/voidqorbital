@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar">
+  <LinearLayout
+      android:layout_alignParentLeft="true"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:src="@drawable/ic_launcher"
+                   android:background="@drawable/ic_launcher" />
+    
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#FFFFFF"
+               android:layout_centerInParent="true"
+        android:layout_marginRight="20dip"
+        android:gravity="center"
+ android:textStyle="bold"
+        android:textSize="20dip"
+       android:text="Home" />
+
+    
+    
+    
+</RelativeLayout>
+
+<ScrollView
+     android:layout_below="@+id/top"
+ android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#203748" >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                  android:background="#203748">
+                <!-- Logo Start-->
+
+                  <ImageView
+                android:id="@+id/ImageView3_Left"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+  android:background="#203748"
+                ></ImageView>
+
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+       
+ <!-- Login Form -->
+       
+    
+        <!-- Login Form Ends -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/header"
+            android:id="@+id/idd"
+            android:background="#203748"
+            android:orientation="vertical"
+            android:tileMode="repeat" >
+<TextView 
+		android:textColor="#FFFFFF"
+		android:id="@+id/TextView01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+          <ImageButton
+                android:id="@+id/imgbtnAbout"
+                android:src="@drawable/aboutus"
+                android:background="@null"
+                android:layout_width="135dip"
+                android:layout_height="60dip"
+                
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="31dp"
+
+               />
+             <ImageButton
+                android:id="@+id/imgbtnBook"
+                android:src="@drawable/bookadr"
+                android:background="@null"
+                android:layout_width="135dip"
+                android:layout_height="60dip"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="31dp"
+                android:layout_marginRight="20dp"
+
+               />
+           <ImageButton
+                android:id="@+id/imgbtnHistory"
+                android:src="@drawable/myhistory"
+                android:background="@null"
+                android:layout_width="135dip"
+                android:layout_height="60dip"
+                android:layout_marginTop ="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                 />
+              <ImageButton
+                android:id="@+id/imgbtnClinics"
+                android:src="@drawable/listofclinis"
+                android:background="@null"
+                android:layout_width="135dip"
+                android:layout_height="60dip"
+                android:layout_marginTop ="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                
+                  />
+
+
+        </RelativeLayout>
+                <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#203748"
+            android:layout_below="@+id/idd"
+            android:orientation="vertical"
+            android:tileMode="repeat" >
+<ImageButton
+                android:id="@+id/imglogout"
+                android:src="@drawable/logout"
+                android:background="@null"
+                android:layout_width="135dip"
+                android:layout_height="60dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                
+                  />
+</RelativeLayout>
+  </RelativeLayout>
+  
+</ScrollView>
+ 
+  </RelativeLayout>
+  

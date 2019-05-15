@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#f5f6f5"
+  >
+
+ <RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY" 
+                   android:src="@drawable/leftbutton"
+                   android:background="#00FFFFFF" />
+    <TextView 
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dip"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Book a Doctor"
+        android:textStyle="bold"
+        android:textSize="20dip"
+        android:id="@+id/pagename"
+        />
+    
+    
+    
+  </RelativeLayout>
+  
+
+  <!-- Scrollable Item below header and above footer -->
+  <ScrollView
+      android:layout_below="@+id/top"
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+      >
+
+    <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+
+        
+        
+
+      <TextView
+          android:id="@+id/lblSymptoms"
+        android:layout_marginTop="10dp"
+         android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are your symptoms?"
+        android:textSize="15dp"
+         android:textColor="#000000"  />
+  <LinearLayout
+      android:layout_below="@+id/lblSymptoms"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/cb1"
+       >
+
+      <CheckBox
+          android:id="@+id/checkBox1"
+          android:layout_width="120dip"
+          android:layout_height="wrap_content"
+          android:paddingLeft="3px"
+          android:button="@drawable/customcheckbox"
+          android:color="#000000"
+          android:text="Cough"
+          android:textColor="#000000"
+          android:textSize="15dip" />
+
+      <CheckBox
+          android:id="@+id/cbHeadache"
+          android:layout_width="120dip"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:button="@drawable/customcheckbox"
+          android:color="#000000"
+          android:paddingLeft="3px"
+          android:text="Headache"
+          android:textColor="#000000"
+          android:textSize="15dip" />
+
+            
+</LinearLayout>
+  <LinearLayout
+      android:id="@+id/checkboxes"
+      android:layout_below="@+id/cb1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     >
+
+      <CheckBox
+          android:id="@+id/checkBox2"
+          android:layout_width="120dip"
+          android:layout_height="wrap_content"
+
+          android:paddingLeft="3px"
+          android:button="@drawable/customcheckbox"
+          android:color="#000000"
+          android:text="Fever"
+          android:textColor="#000000"
+          android:textSize="15dip" />
+
+      <CheckBox
+          android:id="@+id/cbVomiting"
+          android:layout_width="120dip"
+          android:layout_height="wrap_content"
+          android:paddingLeft="3px"
+          android:layout_marginLeft="20dp"
+          android:button="@drawable/customcheckbox"
+          android:color="#000000"
+          android:text="Vomiting"
+          android:textColor="#000000"
+          android:textSize="15dip" />
+            
+          
+</LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/checkboxes2"
+      android:layout_below="@+id/checkboxes"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     >
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:button="@drawable/customcheckbox"
+            android:color="#000000"
+            android:text="Flu"
+            android:paddingLeft="3px"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+
+        <CheckBox
+            android:id="@+id/cbDiarrhea"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="3px"
+            android:button="@drawable/customcheckbox"
+            android:color="#000000"
+            android:text="Diarrhoea"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+
+
+    </LinearLayout>
+      <LinearLayout
+      android:id="@+id/checkboxes3"
+      android:layout_below="@+id/checkboxes2"
+      android:layout_width="fill_parent"
+      
+      android:layout_height="wrap_content"
+     >
+
+          <CheckBox
+              android:id="@+id/checkBox4"
+              android:layout_width="120dip"
+              android:layout_height="wrap_content"
+              android:button="@drawable/customcheckbox"
+              android:color="#000000"
+              android:paddingLeft="3px"
+              android:text="Bodyache"
+              android:textColor="#000000"
+              android:textSize="15dip" />
+
+          <CheckBox
+              android:id="@+id/checkBox5"
+              android:layout_width="120dip"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:button="@drawable/customcheckbox"
+              android:color="#000000"
+              android:text="Others"
+              android:paddingLeft="3px"
+              android:textColor="#000000"
+              android:textSize="15dip" />
+                      
+          </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/checkboxes3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backwithborder"
+            android:ems="10"
+
+            android:gravity="top|left"
+            android:padding="10dip"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="12dip" />
+
+
+           
+            <LinearLayout
+	android:id="@+id/asdas"
+	android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+     android:layout_below="@+id/editText1">
+
+
+
+
+
+            </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/asdas"
+            android:id="@+id/lbdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="15dp"
+            android:textColor="#1248ea"  />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lbdate"
+            android:id="@+id/displaydate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="#000000"  />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/displaydate"
+            android:id="@+id/lbtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Time Slot"
+            android:textSize="15dp"
+            android:textColor="#1248ea"
+             />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lbtime"
+            android:id="@+id/displaytime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="#000000"  />
+
+
+                        <TextView
+                 android:layout_marginTop="10dp"
+                 android:layout_below="@+id/displaytime"
+                android:id="@+id/lbnote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: Selected Time may be adjusted accordingly"
+        android:textSize="10sp"
+         android:textColor="#000000"  />
+
+        <Button
+            android:id="@+id/imgbtnBook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbnote"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Next"
+            android:textSize="12dip" />
+                              
+
+
+
+         
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

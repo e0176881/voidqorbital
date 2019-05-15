@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2495bf"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:text="Summary of Booking"
+            android:textColor="#FFFFFF"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:id="@+id/lblmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Booking:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblbookclinic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblmessage"
+                android:layout_marginTop="5dip"
+                android:textColor="#FFFFFF"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/lblrnn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblbookclinic"
+                android:layout_marginTop="10dip"
+                android:text="Booking Number:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblrn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblrnn"
+                android:layout_marginTop="5dip"
+
+                android:textColor="#FFFFFF"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/lblsyndrome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblrn"
+                android:layout_marginTop="10dip"
+                android:text="Symptoms:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblsyndromes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblsyndrome"
+                android:layout_marginTop="5dip"
+
+                android:textColor="#FFFFFF"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/lbldesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblsyndromes"
+                android:layout_marginTop="10dip"
+                android:text="Description:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbldescz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lbldesc"
+                android:layout_marginTop="5dip"
+
+                android:textColor="#000000"
+                android:textSize="18dip" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lbldescz"
+                android:layout_marginTop="10dip"
+                android:text="Booked Date:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="18dip"
+                android:text=""
+                android:textSize="18dip"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/btnreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+
+                android:background="@drawable/buttonstyle"
+                android:text="Return to Main"
+                android:textSize="20dip" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

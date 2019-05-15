@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/feakk"
+    android:scaleType="fitXY">
+
+
+    <ScrollView
+
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <!--  Header  Starts-->
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:scaleType="fitXY">
+                <!-- Logo Start-->
+                <ImageView
+                    android:id="@+id/ImageView3_Left"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dip"
+                    android:background="@drawable/ic_launcher2"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center"
+                    android:text="VoidQ"
+                    android:textColor="?android:attr/colorBackground"
+                    android:textSize="25dip"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:layout_weight="1.0"
+                    android:background="#80FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvlineartext1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Let's get started. "
+                        android:textColor="#9e7365"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvlineartext2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sign in to aVOID Queuing!!"
+                        android:textColor="#9e7365"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="fitXY">
+                <ImageView
+                    android:id="@+id/ImageView3_Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitXY"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/steps"
+
+                    ></ImageView>
+
+                </LinearLayout>
+                <!-- Logo Ends -->
+            </LinearLayout>
+            <!--  Header Ends -->
+
+
+            <!-- Login Form -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:orientation="vertical"
+                android:padding="10dip">
+                <!--  Email Label -->
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="251dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="60dip"
+                    android:layout_marginTop="20dip"/>
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dip"
+                    android:layout_marginTop="10dip"
+                    android:alpha="1"
+                    android:background="#67B1D2"
+
+                    android:text="Login"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dip"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newuser"
+                        android:text="If you are a new user, "
+                        android:textColor="#000000"
+                        android:textSize="15dip"
+                        android:alpha="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/newreg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/newuser"
+                        android:alpha="1"
+                        android:text="sign up here!"
+                        android:textColor="#1248ea"
+                        android:textSize="15dip"
+
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!-- Login Form Ends -->
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"
+  android:background="#E10015">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homebar"
+
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/leftbutton" />
+
+        <TextView
+            android:id="@+id/pagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dip"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="20dip"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+<ScrollView
+        android:layout_below="@+id/top"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#f5f6f5">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#f5f6f5">
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+             
+                android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+ 
+        <!-- Registration Form -->
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dip"
+          android:layout_below="@id/header">
+          <!-- Full Name Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="Please sign up with voidQ to continue"
+                android:id="@+id/lbusername"/>
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/borderrlt"
+                android:hint="Email"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderrlt"
+                android:hint="Handphone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000" />
+
+          <!--  Email Label -->
+         
+          <EditText android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+              android:textCursorDrawable="@null"
+               android:background="@drawable/backwithborder2"
+                 android:hint="Password"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+          
+          
+          <EditText android:id="@+id/reg_cfmpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+android:textColor="#000000"
+              android:textCursorDrawable="@null"
+                android:background="@drawable/backwithborder2"
+                 android:hint="Confirm Password"
+                android:padding="10dp"/>
+
+            <!-- Register Button -->
+  <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="By signing up, you agree to voidQ's Terms and Conditions."
+                android:id="@+id/lbpassword"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+         
+          
+            <Button android:id="@+id/btnRegister"
+
+                  android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+android:textColor="#FFFFFF"
+android:alpha="1" 
+android:background="@drawable/buttonstyle"
+android:textSize="20dip"
+                android:text="Register"
+/>
+            
+            <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="10dip"
+     >
+                    <TextView 
+                  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:id="@+id/regg"
+                android:text="Already have an account? "
+                android:textColor="#000000"
+android:textSize="15dip"
+android:alpha="1" 
+
+                />
+
+                <TextView
+                    android:id="@+id/link_to_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/regg"
+                    android:alpha="1"
+                    android:text="Login"
+                    android:textColor="#1248ea"
+                    android:textSize="15dip"
+
+                    />
+                    </RelativeLayout>
+            
+            
+
+
+ 
+         
+ <TextView 
+		
+		android:id="@+id/TextViewaaa" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+        
+  </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

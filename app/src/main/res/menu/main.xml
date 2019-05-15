@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  
+  <item android:id="@+id/menuitem_search"
+        android:title="@string/menu_search"
+        android:icon="@android:drawable/ic_menu_search" 
+        android:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/menuitem_signup"
+        android:title="@string/menu_signup"
+
+        >
+    </item>
+    <item android:id="@+id/menuitem_login"
+        android:title="@string/menu_login"
+      
+        
+       >
+    </item>
+    
+    <item android:id="@+id/menuitem_about"
+        android:title="@string/menu_about"
+        >
+    </item>
+   
+</menu>

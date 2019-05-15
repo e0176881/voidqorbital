@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+ android:background="#f5f6f5"
+   >
+ 
+       <RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY" 
+                   android:src="@drawable/leftbutton"
+                   android:background="#00FFFFFF" />
+
+           <TextView
+               android:id="@+id/pagename"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="60dip"
+               android:gravity="center"
+               android:text="Past Booking"
+               android:textColor="#FFFFFF"
+               android:textSize="20dip"
+               android:textStyle="bold" />
+    
+    
+    
+  </RelativeLayout>
+
+
+<ScrollView
+     android:layout_below="@+id/top"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+android:background="#f5f6f5"
+android:padding="10dp"
+   >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="#f5f6f5" >
+
+
+        <!--  Header Ends -->
+
+ <!-- Login Form -->
+
+
+        <!-- Login Form Ends -->
+
+      <RelativeLayout
+
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:orientation="vertical"
+          android:tileMode="repeat">
+
+          <TextView
+              android:id="@+id/asdd"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:layout_marginTop="14dip"
+              android:text="Thank you for booking with voidQ!"
+              android:textColor="#000000"
+              android:textSize="15dip" />
+
+          <TextView
+              android:id="@+id/lblmessage"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/asdd"
+              android:text="BOOKING DETAILS"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip"
+              android:textStyle="bold" />
+
+          <View
+              android:id="@+id/tv2"
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+
+              android:layout_below="@+id/lblmessage"
+              android:layout_marginTop="5dp"
+              android:background="@android:color/darker_gray" />
+
+          <TextView
+              android:id="@+id/asd"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv2"
+              android:layout_marginTop="5dip"
+              android:text="Clinic"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip" />
+
+
+          <TextView
+              android:id="@+id/lblbookclinic"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+
+              android:layout_below="@+id/asd"
+              android:layout_marginTop="5dip"
+              android:textColor="#000000"
+              android:textSize="14dip" />
+
+          <RelativeLayout
+
+              android:id="@+id/cb1"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblbookclinic"
+              android:layout_marginTop="5dip">
+
+              <TextView
+                  android:id="@+id/tvaddress"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:textColor="#7D7D7D"
+                  android:textSize="14dip" />
+
+              <TextView
+                  android:id="@+id/tvviewmap"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_toRightOf="@+id/tvaddress"
+                  android:text=" view map"
+                  android:textColor="#1248ea"
+                  android:textSize="10dip" />
+
+
+          </RelativeLayout>
+
+          <TextView
+              android:id="@+id/lblsyndrome"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+
+              android:layout_below="@+id/cb1"
+              android:layout_marginTop="14dip"
+              android:text="Symptoms"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip" />
+
+          <TextView
+              android:id="@+id/lblsyndromes"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblsyndrome"
+              android:layout_marginTop="5dip"
+
+              android:textColor="#000000"
+              android:textSize="14dip" />
+
+          <TextView
+              android:id="@+id/lblmc"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblsyndromes"
+              android:layout_marginTop="14dip"
+              android:text="DateTime"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip" />
+
+          <TextView
+              android:id="@+id/lblmcz"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblmc"
+              android:layout_marginTop="5dip"
+
+              android:textColor="#000000"
+              android:textSize="14dip" />
+
+
+          <TextView
+              android:id="@+id/lblrefno"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblmcz"
+              android:layout_marginTop="14dip"
+              android:text="Reference No"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip" />
+
+          <TextView
+              android:id="@+id/lblrefnoz"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblrefno"
+              android:layout_marginTop="5dip"
+
+              android:textColor="#000000"
+              android:textSize="14dip" />
+
+
+
+          <Button
+              android:id="@+id/btnok"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblrefnoz"
+              android:layout_marginTop="20dip"
+              android:alpha="1"
+
+              android:background="@drawable/buttonstyle"
+
+              android:text="OK"
+
+              />
+          <LinearLayout
+              android:id="@+id/paymenttab"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnok"
+              android:orientation="vertical" >
+
+              <TextView
+                  android:id="@+id/lblmessage2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/paymenttab"
+                  android:layout_marginTop="20dip"
+                  android:text="CHARGES"
+                  android:textColor="#7D7D7D"
+                  android:textSize="14dip"
+                  android:textStyle="bold" />
+
+          <View
+              android:id="@+id/tv3"
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+
+              android:layout_below="@+id/lblmessage2"
+              android:layout_marginTop="5dp"
+              android:background="@android:color/darker_gray" />
+
+
+              <TextView
+                  android:id="@+id/lblprice"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/tv3"
+                  android:layout_marginTop="14dip"
+                  android:textColor="#7D7D7D"
+                  android:textSize="14dip" />
+
+          <TextView
+              android:id="@+id/lblpricez"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/lblprice"
+              android:layout_marginTop="5dip"
+              android:textColor="#000000"
+              android:textSize="14dip" />
+
+
+              <TextView
+                  android:id="@+id/lbltotal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/lblpricez"
+                  android:layout_marginTop="5dip"
+                  android:textColor="#000000"
+                  android:textSize="14dip" />
+
+          <Button
+              android:id="@+id/btnpay"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lbltotal"
+              android:alpha="1"
+              android:background="@drawable/buttonstyle"
+              android:text="Make Payment"
+
+              />
+          </LinearLayout>
+
+      </RelativeLayout>
+
+
+
+  </RelativeLayout>
+
+  </ScrollView>
+  
+
+
+  </RelativeLayout>

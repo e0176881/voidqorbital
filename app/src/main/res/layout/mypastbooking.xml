@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+ android:background="#f5f6f5"
+   >
+ 
+       <RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar"
+    
+     >
+
+
+       </RelativeLayout>
+
+
+<ScrollView
+     android:layout_below="@+id/top"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+android:background="#f5f6f5"
+android:padding="10dp"
+   >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="#f5f6f5" >
+
+
+        <!--  Header Ends -->
+
+ <!-- Login Form -->
+
+
+        <!-- Login Form Ends -->
+
+      <RelativeLayout
+
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:orientation="vertical"
+          android:tileMode="repeat">
+
+
+
+          <TextView
+
+              android:id="@+id/lblmessage2"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Existing Appointments"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip"
+              android:textStyle="bold" />
+
+          <View
+              android:id="@+id/tv3"
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:layout_below="@+id/lblmessage2"
+
+              android:layout_marginTop="5dp"
+              android:background="@android:color/darker_gray" />
+
+
+          <TextView
+              android:id="@+id/textviewappointmentz"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv3"
+              android:layout_marginTop="20dp"
+              android:text="View Existing Appointments"
+              android:textColor="#1248ea"
+              android:textSize="15dp" />
+
+
+          <TextView
+              android:layout_marginTop="20dp"
+              android:id="@+id/lblmessage"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Past Appointments"
+              android:layout_below="@+id/textviewappointmentz"
+              android:textColor="#7D7D7D"
+              android:textSize="14dip"
+              android:textStyle="bold" />
+
+          <View
+              android:id="@+id/tv2"
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+
+              android:layout_below="@+id/lblmessage"
+              android:layout_marginTop="5dp"
+              android:background="@android:color/darker_gray" />
+
+          <TextView
+              android:id="@+id/textviewappointment"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv2"
+              android:layout_marginTop="20dp"
+              android:text="View Past Appointments"
+              android:textColor="#1248ea"
+              android:textSize="15dp" />
+
+
+
+
+
+
+
+
+
+
+      </RelativeLayout>
+
+
+
+  </RelativeLayout>
+
+  </ScrollView>
+  
+
+
+  </RelativeLayout>

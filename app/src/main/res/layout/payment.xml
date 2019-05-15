@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+ android:background="#f5f6f5"
+   >
+ 
+       <RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY" 
+                   android:src="@drawable/leftbutton"
+                   android:background="#00FFFFFF" />
+    <TextView 
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dip"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Confirm Booking"
+        android:textStyle="bold"
+        android:textSize="20dip"
+        android:id="@+id/pagename"
+        />
+    
+    
+    
+  </RelativeLayout>
+    
+    
+<ScrollView
+     android:layout_below="@+id/top"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+android:background="#f5f6f5" 
+android:padding="10dp"
+   >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="#f5f6f5" >
+ 
+     
+        <!--  Header Ends -->
+       
+ <!-- Login Form -->
+       
+    
+        <!-- Login Form Ends -->
+
+        <RelativeLayout
+             
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            
+            android:orientation="vertical"
+            android:tileMode="repeat" >
+
+           <TextView android:id="@+id/lblmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOKING DETAILS"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="#7D7D7D"/>
+                            <View
+              android:layout_marginTop="5dp"
+               android:id="@+id/tv2"
+               android:layout_below="@+id/lblmessage"
+                  
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/asd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginTop="5dip"
+                android:textColor="#7D7D7D"
+                android:textSize="20dip"
+                android:text="Clinic" />
+      <TextView
+       android:id="@+id/lblbookclinic"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       
+       android:layout_below="@+id/asd"
+       android:layout_marginTop="5dip"
+       android:textColor="#000000"
+          android:textSize="15dip" />
+   <TextView
+       android:id="@+id/lblsyndrome"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/lblbookclinic"
+       android:text="Symptoms"
+       android:layout_marginTop="10dip"
+       android:textColor="#7D7D7D"
+       android:textStyle="bold"
+       android:textSize="20dip" />
+   <TextView
+       android:id="@+id/lblsyndromes"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/lblsyndrome"
+       android:layout_marginTop="5dip"
+       android:textColor="#000000"
+       android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/lblmc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblsyndromes"
+                android:layout_marginTop="10dip"
+                android:text="Appointment"
+                android:textColor="#7D7D7D"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+   <TextView
+       android:id="@+id/lblmcz"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/lblmc"
+       android:layout_marginTop="5dip"
+       android:textColor="#000000"
+       android:textSize="15dip" />
+
+     <View
+              android:layout_marginTop="5dp"
+               android:id="@+id/tv1"
+              
+                  android:layout_below="@+id/lblmcz"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+ <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/tv1"
+       android:layout_marginTop="10dip"
+       android:text=""
+       android:textColor="#000000"
+        />
+
+  <Button
+       android:id="@+id/btncheckout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+android:layout_below="@+id/textView2"
+       android:text="Book"
+android:layout_marginTop="50dip"
+                                     android:alpha="1" 
+                    
+android:background="@drawable/buttonstyle"
+                         
+       />
+
+            <TextView
+                android:id="@+id/tvcancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btncheckout"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="#1248ea" />
+  
+
+  </RelativeLayout>
+ 
+  </RelativeLayout>
+  
+  </ScrollView>
+  
+
+
+  </RelativeLayout>

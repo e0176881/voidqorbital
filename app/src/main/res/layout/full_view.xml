@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#f5f6f5"
+    
+    tools:context=".MainActivity" >
+ <RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY" 
+                   android:src="@drawable/leftbutton"
+                   android:background="#00FFFFFF" />
+
+     <TextView
+         android:id="@+id/pagename"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerInParent="true"
+         android:layout_marginLeft="60dip"
+         android:gravity="center"
+         android:text="voidQ"
+         android:textColor="#FFFFFF"
+         android:textSize="20dip"
+         android:textStyle="bold" />
+    
+    
+    
+  </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:id="@+id/top2"
+       android:layout_above="@+id/closemap"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" 
+            
+            />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/closemap"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="#1248ea"
+        android:gravity="center"
+        android:text="Close Map"
+        android:textColor="#FFFFFF"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+     
+     
+
+</RelativeLayout>
