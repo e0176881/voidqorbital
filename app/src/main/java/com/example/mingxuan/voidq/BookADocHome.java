@@ -13,7 +13,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.support.v4.app.FragmentActivity;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -22,6 +21,8 @@ import android.view.ViewConfiguration;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.example.mingxuan.voidq.adapter.TitleNavigationAdapter;
 import com.example.mingxuan.voidq.model.SpinnerNavItem;
@@ -35,7 +36,7 @@ import org.apache.http.NameValuePair;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-public class BookADocHome extends FragmentActivity{
+public class BookADocHome extends FragmentActivity {
 	SharedPreferences sharedpreferences;
     public static final String MyPREFERENCES = "MyPrefs" ;
     public static final String pUserName = "username"; 
